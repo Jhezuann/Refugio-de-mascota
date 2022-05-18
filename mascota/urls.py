@@ -3,8 +3,8 @@ from mascota.views import *
 
 urlpatterns = [
     path('', mascota, name='mascota'),
-    path('nuevo/', mascotaView, name='mascotaView'),
-    path('lista/', mascota_list, name='mascota_list'),
-    path('editar/<int:id_mascota>/', mascota_edit, name='mascota_edit'),
-    path('eliminar/<int:id_mascota>/', mascota_delete, name='mascota_delete'),
+    path('nuevo/', MascotaCreate.as_view(), name='mascotaView'),
+    path('lista/', MascotaList.as_view(), name='mascota_list'),
+    path('editar/<pk>/', MascotaUpdate.as_view(), name='mascota_edit'),
+    path('eliminar/<pk>/', MascotaDelete.as_view(), name='mascota_delete'),
 ]
