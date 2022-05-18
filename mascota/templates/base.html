@@ -2,9 +2,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+<link rel="stylesheet" href="{% static 'css/base3.css' %}">
 </head>
 <body>
+
+<header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">mascotas</a>
+                <ul class="submenu1">
+                    <li><a href="#">registrar</a></li>
+                    <li><a href="#">listar</a></li>
+                </ul>
+            </li>
+            <li><a href="#">adopciones</a>
+                <ul class="submenu2">
+                    <li><a href="#">solicitar</a></li>
+                    <li><a href="#">listar</a></li>
+                </ul>
+            </li>
+            <li><a href="#">github</a></li>
+            <li><a href="#">opciones</a>
+                <ul class="submenu3">
+                    <li><a href="#">salir</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</header>
 
 {% block content %}
 {% endblock %}
