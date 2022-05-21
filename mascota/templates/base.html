@@ -9,20 +9,20 @@
 <header>
     <nav class="navegacion">
         <ul class="menu">
-            <li><a href="#">inicio</a></li>
+            <li><a href="{% url 'mascota'%}">inicio</a></li>
             <li><a href="#">mascotas</a>
                 <ul class="submenu1">
-                    <li><a href="#">registrar</a></li>
-                    <li><a href="#">listar</a></li>
+                    <li><a href="{% url 'mascotaView'%}">registrar</a></li>
+                    <li><a href="{% url 'mascota_list'%}">listar</a></li>
                 </ul>
             </li>
             <li><a href="#">adopciones</a>
                 <ul class="submenu2">
-                    <li><a href="#">solicitar</a></li>
-                    <li><a href="#">listar</a></li>
+                    <li><a href="{% url 'SolicitudCreate'%}">solicitar</a></li>
+                    <li><a href="{% url 'SolicitudList'%}">listar</a></li>
                 </ul>
             </li>
-            <li><a href="#">github</a></li>
+            <li><a href="https://github.com/Jhezuann">github</a></li>
             <li><a href="#">opciones</a>
                 <ul class="submenu3">
                     <li><a href="#">salir</a></li>
