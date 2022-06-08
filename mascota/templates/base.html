@@ -9,7 +9,7 @@
 <header>
     <nav class="navegacion">
         <ul class="menu">
-            <li><a href="{% url 'mascota'%}">inicio</a></li>
+            <li><a href="{% url 'home'%}">inicio</a></li>
             <li><a href="#">mascotas</a>
                 <ul class="submenu1">
                     <li><a href="{% url 'mascotaView'%}">registrar</a></li>
@@ -25,7 +25,7 @@
             <li><a href="https://github.com/Jhezuann">github</a></li>
             <li><a href="#">opciones</a>
                 <ul class="submenu3">
-                    <li><a href="#">salir</a></li>
+                    <li><a href="{% url 'logout' %}">salir</a></li>
                 </ul>
             </li>
 

@@ -22,5 +22,6 @@ urlpatterns = [
     path('mascota/', include('mascota.urls')),
     path('adopcion/', include('adopcion.urls')),
     path('usuario/', include('usuario.urls')),
-    path('', LoginView.as_view(template_name='mascota.html'), name='login'),
+    path('accounts/login/', LoginView.as_view(template_name='mascota.html'), name='login'),
+    path('logout/', logout_then_login, name='logout'),
 ]

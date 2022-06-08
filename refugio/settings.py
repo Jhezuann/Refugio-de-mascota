@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'adopcion',
     'mascota',
     'usuario',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -135,4 +136,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-LOGIN_REDIRECT_URL = reverse_lazy('mascota_list')
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGOUT_REDIRECT_URL = reverse_lazy('login')
